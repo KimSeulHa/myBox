@@ -1,0 +1,10 @@
+//replace()와 replaceAll()차이
+
+replace(".","*"); //"."을 문자로 인식
+replaceAll(".","*"); //"."을 정규식으로 인식 = "."는 모든 문자열을 가르킴
+
+ex) 
+String txt = "안.녕.하.세.요."
+
+txt.replace(".","*"); // 안*녕*하*세*요*
+txt.replaceAll(".","*"); // **********
