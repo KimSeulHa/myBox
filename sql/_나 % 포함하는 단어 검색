@@ -1,0 +1,11 @@
+--문자열 '_' 를 포함하는 단어 선택
+SELECT * FROM TBL
+WHERE COL LIKE '%\_%' ESCAPE '\'
+
+--문자열 '%' 를 포함하는 단어 선택
+SELECT  FROM TBL
+WHERE COL LIKE '%\%%' ESCAPE '\'
+
+--간단한 방법 []
+SELECT FROM TBL
+WHERE COL LIKE '%[%]%'
