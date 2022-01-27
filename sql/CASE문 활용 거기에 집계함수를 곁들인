@@ -1,0 +1,16 @@
+-- COMPANY_A회사에 있는 IT본부 남자 여자 직원 수를 출력
+SELECT 
+    COUNT(
+        CASE
+        WHEN SEX = 1 AND DEP = 'IT' THEN 1
+        END
+    )AS IT본부_남자,
+    COUNT(
+        CASE
+        WHEN SEX = 2 AND DEP = 'IT' THEN 1
+        END
+    )AS IT본부_여자
+FROM COMPANY_A
+
+
+   
