@@ -1,0 +1,4 @@
+'hello'
+1.toUpperCase() //HELLO
+2.indexOf('o')  //4
+3.trim()        //
