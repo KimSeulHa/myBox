@@ -1,0 +1,16 @@
+<이벤트: 웹브라우저 위에서 일어나는 일들>
+
+*onclick 속성
+- 속성값으로 반드시 javaScript가 와야 된다
+ex) onclick = "alert('hi')"
+- onclick 속성이 위치하고 있는 태그를 사용자가 클릭하였을때, 웹브라우저가 기억하고 있던 js 코드를 js 문법에 따라 해석해
+거기 적혀 있는대로 웹브라우저가 동작할 것이다.
+
+*onchange 속성
+- 내용이 변했을 때, 이벤트가 실행된다.
+ex) <input type="text" onchange="alert('changed')" />
+
+*onkeydown 속성
+- input 입력란을 클릭하고 키보드를 눌렀을 경우, 이벤트가 실행된다.
+즉, 입력란에 내용이 입력되었을 때
+ex) <input type="text" onkeydown="alert('onkeydown')" />
