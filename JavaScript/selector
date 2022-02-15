@@ -1,0 +1,4 @@
+document.querySeletor('#id');
+documnet.getElementById('id');
+documnet.getElementsByClassName('class');
+documnet.getElementsByTagName('id');
