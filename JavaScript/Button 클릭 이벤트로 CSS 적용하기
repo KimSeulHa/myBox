@@ -1,0 +1,31 @@
+<%@ page contentType="text/html;charset=euc-kr" %>
+<!DOCTYPE html>
+<head>
+	<title>javaScript를 이용한 동적인 화면</title>
+	<meta charset= "utf-8">
+</head>
+<body>
+	
+<h1><a href="index.html">WEB</a></h1>
+  <input id="night_day" type="button" value="Night" onclick="
+    if(document.querySelector('#night_day').value === 'Night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#night_day').value = 'day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'Night';
+    }
+  ">
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>JavaScript</h2>
+  <p>
+    JavaScript를 이용한 동적인 화면을 만들어 보았습니다!
+</p>
+</body>
+</html>
