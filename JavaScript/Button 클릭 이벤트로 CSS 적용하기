@@ -3,37 +3,42 @@
 <head>
 	<title>javaScript를 이용한 동적인 화면</title>
 	<meta charset= "utf-8">
-</head>
-<body>
-	
-<h1><a href="index.html">WEB</a></h1>
-  <input type="button" value="Night" onclick="
-	var target = document.querySelector('body');
-	var aColor = document.querySelectorAll('a');
-	
-	if(this.value === 'Night'){
-		target.style.backgroundColor = 'black';
-		target.style.color = 'white';
-		this.value = 'day';
-		
-		var i = 0;
-		while(i < aColor.length){
-	  		aColor[i].style.color = 'powderblue';
-	  		i = i + 1;
-		}
-	   
-	} else {
-		target.style.backgroundColor = 'white';
-		target.style.color = 'black';
-		this.value = 'Night';
+  <script>
+		function NightDayHandler(self){
+			var target = document.querySelector('body');
+			var aColor = document.querySelectorAll('a');
 
-		var i = 0;
-		while(i < aColor.length){
-	  		aColor[i].style.color = 'blue';
-	  		i = i + 1;
+			if(self.value === 'Night'){
+				target.style.backgroundColor = 'black';
+				target.style.color = 'white';
+				self.value = 'day';
+
+				var i = 0;
+				while(i < aColor.length){
+			  		aColor[i].style.color = 'powderblue';
+			  		i = i + 1;
+				}
+
+			} else {
+				target.style.backgroundColor = 'white';
+				target.style.color = 'black';
+				self.value = 'Night';
+
+				var i = 0;
+				while(i < aColor.length){
+			  		aColor[i].style.color = 'blue';
+			  		i = i + 1;
+				}
+			}
 		}
-	}
-  ">
+  </script>
+
+</head>
+
+<body>
+
+<h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="Night" onclick="NightDayHandler(this)">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -45,3 +50,4 @@
 </p>
 </body>
 </html>
+
