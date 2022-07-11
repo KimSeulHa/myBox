@@ -1,0 +1,8 @@
+//request.getRequestURL()와 request.getRequestURI() 차이
+
+1.request.getRequestURL()
+출력--> https://www.test.com:80/main.jsp
+*프로토콜+포트까지 표시
+
+2.request.getRequestURI()
+출력-->  /main.jsp 
