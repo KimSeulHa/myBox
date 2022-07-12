@@ -1,0 +1,24 @@
+//sendRedirect을 이용한
+	//http -> https로 변환
+	if(request.getRequestURL().indexOf("https") == -1 )
+	{
+		Enumeration param = request.getParameterNames();
+		String strParam = ""; 
+		int pNum = 0;
+		while(param.hasMoreElements()) { 
+			String name = (String)param.nextElement(); 
+			String value = request.getParameter(name);
+
+			if(pNum++ == 0)
+				strParam += name + "=" + value;
+			else
+				strParam += "&"+ name + "=" + value;
+		}
+		String URL = request.getRequestURL() + "?" + strParam; 
+		System.out.println("URL:"+URL.replace("http", "https"));
+
+		URL = URL.replace("http", "https");
+
+		response.sendRedirect(URL);
+		return;
+	}
