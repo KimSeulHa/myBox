@@ -15,8 +15,6 @@
 				strParam += "&"+ name + "=" + value;
 		}
 		String URL = request.getRequestURL() + "?" + strParam; 
-		System.out.println("URL:"+URL.replace("http", "https"));
-
 		URL = URL.replace("http", "https");
 
 		response.sendRedirect(URL);
